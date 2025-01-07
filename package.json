@@ -1,8 +1,8 @@
 {
 	"name": "beluga-stack",
-	"private": true,
+	"private": false,
 	"license": "MIT",
-	"version": "3.0.0",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "run-p database web",
 		"ios": "cd apps/expo && bun ios",

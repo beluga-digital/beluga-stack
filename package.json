@@ -1,0 +1,24 @@
+{
+	"name": "beluga-stack",
+	"private": true,
+	"license": "MIT",
+	"version": "3.0.0",
+	"scripts": {
+		"dev": "run-p web",
+		"ios": "cd apps/expo && bun ios",
+		"android": "cd apps/expo && bun android",
+		"web": "cd apps/next && bun dev",
+		"api": "cd packages/api && bun dev"
+	},
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"dependencies": {
+		"@biomejs/biome": "1.3.3",
+		"@manypkg/cli": "^0.21.4",
+		"check-dependency-version-consistency": "^4.1.1",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^5.7.2"
+	}
+}

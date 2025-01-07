@@ -1,0 +1,5 @@
+{
+  "extends": "@packages/typescript-config/react-library.json",
+  "include": [".", "../../apps/storybook/src/stories/Button.stories.tsx"],
+  "exclude": ["dist", "build", "node_modules"]
+}

@@ -67,3 +67,6 @@ apps/expo/android/**
 **/workbox-*.js
 **/fallback-*.js
 **/service-worker.js
+
+# postgres
+**/postgres/data

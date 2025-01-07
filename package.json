@@ -4,10 +4,12 @@
 	"license": "MIT",
 	"version": "3.0.0",
 	"scripts": {
-		"dev": "run-p web",
+		"dev": "run-p database web",
 		"ios": "cd apps/expo && bun ios",
 		"android": "cd apps/expo && bun android",
 		"web": "cd apps/next && bun dev",
+		"database": "cd packages/postgres && docker-compose up -d",
+		"cms": "cd apps/payload && bun dev",
 		"api": "cd packages/api && bun dev"
 	},
 	"workspaces": [
